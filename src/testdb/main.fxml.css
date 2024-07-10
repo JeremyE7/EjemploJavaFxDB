@@ -1,0 +1,37 @@
+/* styles.css */
+
+.root {
+    -fx-font-family: "Arial";
+    -fx-background-color: #f0f0f0;
+}
+
+.ToolBar {
+    -fx-padding: 10px;
+    -fx-spacing: 10px;
+    -fx-background-color: #ffffff;
+}
+
+.Button {
+    -fx-font-size: 14px;
+}
+
+.tableView {
+    -fx-table-cell-border-color: transparent;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: #d0d0d0;
+}
+
+.table-row-cell {
+    -fx-background-color: #ffffff;
+    -fx-table-cell-border-color: #d0d0d0;
+}
+
+.table-row-cell:odd {
+    -fx-background-color: #f0f0f0;
+}
+
+.PieChart {
+    -fx-background-color: #ffffff;
+}

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.geometry.Insets?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="testdb.MainController">
+    <top>
+        <ToolBar prefHeight="40.0">
+            <items>
+                <Button text="Agregar" onAction="#handleAddTask"/>
+                <Button text="Editar" onAction="#handleEditTask"/>
+                <Button text="Eliminar" onAction="#handleDeleteTask"/>
+            </items>
+        </ToolBar>
+    </top>
+    <center>
+        <TableView fx:id="taskTable" prefWidth="600" prefHeight="400">
+            <columns>
+                <TableColumn fx:id="idColumn" text="ID" prefWidth="50"/>
+                <TableColumn fx:id="nameColumn" text="Nombre" prefWidth="150"/>
+                <TableColumn fx:id="descriptionColumn" text="Descripción" prefWidth="200"/>
+                <TableColumn fx:id="dueDateColumn" text="Fecha de Vencimiento" prefWidth="100"/>
+                <TableColumn fx:id="priorityColumn" text="Prioridad" prefWidth="100"/>
+                <TableColumn fx:id="statusColumn" text="Estado" prefWidth="100"/>
+            </columns>
+        </TableView>
+    </center>
+    <bottom>
+        <PieChart fx:id="taskChart" prefWidth="800" prefHeight="200"/>
+    </bottom>
+</BorderPane>

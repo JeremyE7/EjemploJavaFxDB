@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.DialogPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<DialogPane prefHeight="434.0" prefWidth="415.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="testdb.ViewDialogController">
+   <header>
+        <VBox alignment="CENTER" prefHeight="434.0" prefWidth="415.0" spacing="30.0">
+            <children>
+                <Label prefHeight="0.0" prefWidth="135.0" text="Añadir Tarea">
+                    <font>
+                        <Font size="24.0" />
+                    </font>
+                </Label>
+            <HBox alignment="CENTER" prefHeight="40.0" prefWidth="415.0" spacing="20.0">
+               <children>
+                  <Label prefHeight="17.0" prefWidth="60.0" text="Nombre" />
+                  <TextField fx:id="txtFieldNombre" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="40.0" prefWidth="415.0" spacing="20.0">
+               <children>
+                  <Label prefHeight="17.0" prefWidth="76.0" text="Descripción" />
+                  <TextField fx:id="txtFieldDesc" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="40.0" prefWidth="415.0" spacing="20.0">
+               <children>
+                  <Label prefHeight="36.0" prefWidth="65.0" text="Fecha de vencimiento" textOverrun="CLIP" wrapText="true" />
+                  <DatePicker fx:id="dPickFecha" prefHeight="25.0" prefWidth="156.0" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="40.0" prefWidth="415.0" spacing="20.0">
+               <children>
+                  <Label prefHeight="36.0" prefWidth="65.0" text="Prioridad" textOverrun="CLIP" wrapText="true" />
+                  <ComboBox fx:id="cBoxPrior" prefWidth="150.0" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="40.0" prefWidth="415.0" spacing="20.0">
+               <children>
+                  <Label prefHeight="36.0" prefWidth="65.0" text="Estado:" textOverrun="CLIP" wrapText="true" />
+                  <ComboBox fx:id="cBoxEstado" prefWidth="150.0" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="55.0" prefWidth="415.0" spacing="20.0">
+               <children>
+                  <Button fx:id="btnCancel" mnemonicParsing="false" onAction="#closeModal" text="Cancelar" />
+                  <Button fx:id="btnSave" mnemonicParsing="false" onAction="#addTask" text="Guardar" />
+               </children>
+            </HBox>
+                <!-- Otros elementos de tu diálogo -->
+            </children>
+        </VBox>
+   </header>
+</DialogPane>
